@@ -1,0 +1,1 @@
+function closeTopOPSCWindow(){for(var o=document.getElementsByClassName("dijitDialogCloseIcon"),e=null,n=0;n<o.length;n++)o[n].offsetWidth>0&&(e=o[n]);null!==e&&e.click()}window.onkeydown=function(o){var e=o.keyCode?o.keyCode:o.which;27===e&&closeTopOPSCWindow()};

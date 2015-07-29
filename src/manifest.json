@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "OPSCexit",
+    "version": "0.0.1",
+    "description": "Use your escape key to close modals and dialogs in OpsCenter",
+    "author": "Jack Kingsman <jack.kingsman@gmail.com>",
+    "icons": {
+        "16": "img/opscexit16.png",
+        "48": "img/opscexit48.png",
+        "128": "img/opscexit128.png"
+    },
+    "content_scripts": [{
+        "matches": ["*://*/opscenter*"],
+        "js": ["js/content_script.js"],
+        "run_at": "document_end"
+    }]
+}
